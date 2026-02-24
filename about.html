@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="about-page">
 
-<nav>
-    <div class="logo">My Hobby</div>
-    <div class="nav-links">
-        <a href="home.html">𝐻𝑜𝓂𝑒</a>
-        <a href="reviews.html">𝑅𝑒𝓋𝒾𝑒𝓌𝓈</a>
-        <a href="about.html">𝒜𝒷𝑜𝓾𝓉</a>
-        <a href="game.html">Game</a>
-    </div>
+<nav class="top-nav" aria-label="Main navigation">
+    <a class="logo" href="home.html">My Hobby</a>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="game.html">Game</a></li>
+    </ul>
 </nav>
 
 <section class="page-header">
@@ -20,7 +27,6 @@
 </section>
 
 <div class="dashboard">
-
     <div class="widget">
         <div class="icon">🎬</div>
         <h3>My Hobby</h3>
@@ -60,60 +66,73 @@
     </div>
 
     <div class="widget table-card">
-    <h3>Streaming Platforms</h3>
-    <div class="table-container">
-        <table class="platform-table">
-            <thead>
-                <tr>
-                    <th>Platform</th>
-                    <th>Logo</th>
-                    <th>What I Watch</th>
-                    <th>Visit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Netflix</strong></td>
-                    <td>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
-                    </td>
-                    <td>Movies & International Series</td>
-                    <td><a href="https://www.netflix.com" target="_blank" class="visit-btn">Open</a></td>
-                </tr>
-                <tr>
-                    <td><strong>iQIYI</strong></td>
-                    <td>
-                        <img src="https://www.ais.th/content/ais/th/en_us/consumers/entertainment/streaming-app/iqiyi/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.svg/1688975099713/logo-iqiyi.svg" alt="iQIYI">
-                    </td>
-                    <td>C-dramas & Asian Variety</td>
-                    <td><a href="https://www.iq.com" target="_blank" class="visit-btn">Open</a></td>
-                </tr>
-                <tr>
-                    <td><strong>Viu</strong></td>
-                    <td>
-                        <img src="https://www.ais.th/content/ais/th/th_th/consumers/entertainment/streaming-app/viu/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.svg/1742182312179/logo-viu.svg" alt="Viu">
-                    </td>
-                    <td>Latest K-dramas</td>
-                    <td><a href="https://www.viu.com" target="_blank" class="visit-btn">Open</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+        <h3>Streaming Platforms</h3>
+        <div class="table-container">
+            <table class="platform-table">
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Logo</th>
+                        <th>What I Watch</th>
+                        <th>Visit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Netflix</strong></td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix"></td>
+                        <td>Movies & International Series</td>
+                        <td><a href="https://www.netflix.com" target="_blank" class="visit-btn">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>iQIYI</strong></td>
+                        <td><img src="https://www.ais.th/content/ais/th/en_us/consumers/entertainment/streaming-app/iqiyi/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.svg/1688975099713/logo-iqiyi.svg" alt="iQIYI"></td>
+                        <td>C-dramas & Asian Variety</td>
+                        <td><a href="https://www.iq.com" target="_blank" class="visit-btn">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Viu</strong></td>
+                        <td><img src="https://www.ais.th/content/ais/th/th_th/consumers/entertainment/streaming-app/viu/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.svg/1742182312179/logo-viu.svg" alt="Viu"></td>
+                        <td>Latest K-dramas</td>
+                        <td><a href="https://www.viu.com" target="_blank" class="visit-btn">Open</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <div class="widget recommend-card">
+    <div class="widget watchlist-card">
+        <div class="icon">📝</div>
+        <h3>Current Watchlist Priorities</h3>
+        <ul class="watchlist-points">
+            <li>One comfort romcom every week to reset my mood.</li>
+            <li>At least one new genre every month to discover fresh stories.</li>
+            <li>Save highly emotional dramas for weekends.</li>
+        </ul>
+    </div>
+
+    <div class="widget routine-card">
+        <div class="icon">⏱️</div>
+        <h3>My Movie Night Routine</h3>
+        <div class="list">
+            <div class="list-item">Pick title based on mood and available time</div>
+            <div class="list-item">Prepare snacks + water before pressing play</div>
+            <div class="list-item">Write quick notes after finishing</div>
+        </div>
+    </div>
+
+    <div class="widget recommend-card" id="recommend-form">
         <div class="icon">✉️</div>
         <h3>Your Recommendations</h3>
         <p>What should I watch next? Share your favorite romcoms or dramas!</p>
-        
-        <form id="recommend-form">
+
+        <form id="recommendation-form">
             <div class="form-grid">
                 <div class="form-group">
                     <label for="title">Movie/Series Title</label>
                     <input type="text" id="title" placeholder="e.g. Hometown Cha-Cha-Cha" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="type">Category</label>
                     <select id="type">
@@ -123,16 +142,16 @@
                         <option value="series">International Series</option>
                     </select>
                 </div>
-                
+
                 <div class="form-group-full">
                     <label for="reason">Why do you recommend it?</label>
                     <textarea id="reason" rows="4" placeholder="Tell me about the story..."></textarea>
                 </div>
             </div>
-            
+
             <button type="submit" class="submit-btn">Send Recommendation</button>
         </form>
-        
+
         <div id="thank-you-msg" style="display:none; margin-top: 2rem;">
             <h3>Thank you!</h3>
             <p>I've received your recommendation and added it to my list.</p>
@@ -140,18 +159,18 @@
     </div>
 </div>
 
-<footer>
+<footer class="site-footer">
     <p>Created by Nannapat Jaroenteerawong | 2025</p>
-    <div class="footer-links">
-        <a href="home.html">𝐻𝑜𝓂𝑒</a>
-        <a href="reviews.html">𝑅𝑒𝓋𝒾𝑒𝓌𝓈</a>
-        <a href="about.html">𝒜𝒷𝑜𝓾𝓉</a>
+    <p>
+        <a href="home.html">Home</a> |
+        <a href="reviews.html">Reviews</a> |
+        <a href="about.html">About</a> |
         <a href="game.html">Game</a>
-    </div>
+    </p>
 </footer>
 
 <script>
-    document.getElementById('recommend-form').addEventListener('submit', function(e) {
+    document.getElementById('recommendation-form').addEventListener('submit', function(e) {
         e.preventDefault();
         this.style.display = 'none';
         document.getElementById('thank-you-msg').style.display = 'block';

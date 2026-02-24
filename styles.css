@@ -1520,3 +1520,80 @@ body::after {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===== 2026 PAGE POLISH UPDATES ===== */
+.reviews-page .page-header {
+  background: linear-gradient(140deg, rgba(24, 59, 103, 0.9), rgba(85, 138, 174, 0.9));
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.reviews-page .review-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem auto 1.4rem;
+}
+
+.reviews-page .review-stats article {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(30, 63, 102, 0.15);
+  box-shadow: 0 10px 24px rgba(11, 28, 51, 0.15);
+}
+
+.reviews-page .review-stats h3 {
+  color: #16375a;
+  margin-bottom: 0.25rem;
+}
+
+.reviews-page .movie-display {
+  background: linear-gradient(145deg, rgba(23, 57, 98, 0.94), rgba(85, 138, 174, 0.92));
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.reviews-page .poster {
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 18px 28px rgba(0,0,0,0.3);
+}
+
+.reviews-page .poster:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.game-page::before {
+  filter: brightness(0.5) saturate(1.05);
+}
+
+.game-page::after {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(121, 166, 255, 0.22), transparent 44%),
+    radial-gradient(circle at 80% 12%, rgba(232, 121, 255, 0.14), transparent 36%),
+    linear-gradient(145deg, rgba(20, 37, 74, 0.6), rgba(28, 52, 95, 0.5));
+}
+
+.game-page .game-hero,
+.game-page .game-panel,
+.game-page .quiz-box {
+  background: linear-gradient(160deg, rgba(28, 49, 93, 0.82), rgba(26, 47, 90, 0.74));
+}
+
+.game-page .scoreboard {
+  background: rgba(173, 205, 255, 0.14);
+}
+
+.about-page .watchlist-card,
+.about-page .routine-card {
+  min-height: 100%;
+}
+
+.watchlist-points {
+  margin-top: 0.6rem;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.watchlist-points li {
+  line-height: 1.5;
+}
