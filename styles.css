@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;500;600;700&display=swap');
 :root {
   --blue-light: #BCD2E8;
   --blue-mid: #91BAD6;
@@ -13,7 +14,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
   min-height: 100vh;
@@ -1582,22 +1583,6 @@ body::after {
   background: rgba(173, 205, 255, 0.14);
 }
 
-.about-page .watchlist-card,
-.about-page .routine-card {
-  min-height: 100%;
-}
-
-.watchlist-points {
-  margin-top: 0.6rem;
-  padding-left: 1rem;
-  display: grid;
-  gap: 0.4rem;
-}
-
-.watchlist-points li {
-  line-height: 1.5;
-}
-
 
 /* ===== FINAL SYMMETRY + PROFESSIONAL TABLE POLISH ===== */
 :root {
@@ -1646,11 +1631,6 @@ main,
 .about-page .table-card,
 .about-page .recommend-card {
   grid-column: 1 / -1;
-}
-
-.about-page .watchlist-card,
-.about-page .routine-card {
-  grid-column: span 6;
 }
 
 /* Professional streaming table */
@@ -1723,17 +1703,21 @@ main,
 }
 
 @media (max-width: 1024px) {
-  .about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card),
-  .about-page .watchlist-card,
-  .about-page .routine-card {
+  .about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card) {
     grid-column: span 6;
   }
 }
 
 @media (max-width: 760px) {
-  .about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card),
-  .about-page .watchlist-card,
-  .about-page .routine-card {
+  .about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card) {
     grid-column: 1 / -1;
   }
+}
+
+
+/* ===== READABILITY TWEAK ===== */
+.about-page .recommend-card h3,
+.about-page .recommend-card p,
+.about-page .recommend-card label {
+  color: #ffffff !important;
 }
