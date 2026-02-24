@@ -486,7 +486,7 @@ body::after {
         * { margin:0; padding:0; box-sizing:border-box; }
 
         body {
-            font-family:'Nunito', sans-serif;
+            font-family:'Roboto', sans-serif;
             min-height:100vh;
             color: var(--text-dark);
             line-height: 1.6;
@@ -1720,14 +1720,4 @@ main,
 .about-page .recommend-card p,
 .about-page .recommend-card label {
   color: #ffffff !important;
-}
-
-
-/* ===== GLOBAL FONT ENFORCE ===== */
-body, button, input, select, textarea {
-  font-family: "Nunito", sans-serif !important;
-}
-
-.logo, .hero h1, .section h2, .widget h3, .page-header h1 {
-  font-family: "Cinzel", serif !important;
 }
