@@ -1520,3 +1520,220 @@ body::after {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ===== 2026 PAGE POLISH UPDATES ===== */
+.reviews-page .page-header {
+  background: linear-gradient(140deg, rgba(24, 59, 103, 0.9), rgba(85, 138, 174, 0.9));
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.reviews-page .review-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem auto 1.4rem;
+}
+
+.reviews-page .review-stats article {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(30, 63, 102, 0.15);
+  box-shadow: 0 10px 24px rgba(11, 28, 51, 0.15);
+}
+
+.reviews-page .review-stats h3 {
+  color: #16375a;
+  margin-bottom: 0.25rem;
+}
+
+.reviews-page .movie-display {
+  background: linear-gradient(145deg, rgba(23, 57, 98, 0.94), rgba(85, 138, 174, 0.92));
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.reviews-page .poster {
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 18px 28px rgba(0,0,0,0.3);
+}
+
+.reviews-page .poster:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.game-page::before {
+  filter: brightness(0.5) saturate(1.05);
+}
+
+.game-page::after {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(121, 166, 255, 0.22), transparent 44%),
+    radial-gradient(circle at 80% 12%, rgba(232, 121, 255, 0.14), transparent 36%),
+    linear-gradient(145deg, rgba(20, 37, 74, 0.6), rgba(28, 52, 95, 0.5));
+}
+
+.game-page .game-hero,
+.game-page .game-panel,
+.game-page .quiz-box {
+  background: linear-gradient(160deg, rgba(28, 49, 93, 0.82), rgba(26, 47, 90, 0.74));
+}
+
+.game-page .scoreboard {
+  background: rgba(173, 205, 255, 0.14);
+}
+
+.about-page .watchlist-card,
+.about-page .routine-card {
+  min-height: 100%;
+}
+
+.watchlist-points {
+  margin-top: 0.6rem;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.watchlist-points li {
+  line-height: 1.5;
+}
+
+
+/* ===== FINAL SYMMETRY + PROFESSIONAL TABLE POLISH ===== */
+:root {
+  --content-width: 1180px;
+}
+
+.site-header,
+main,
+.page-header,
+.site-footer {
+  width: min(100%, var(--content-width));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.section,
+.netflix-layout,
+.about-main {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+}
+
+/* About page symmetry */
+.about-main {
+  padding-inline: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-page .dashboard {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0;
+  max-width: 100%;
+}
+
+.about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card) {
+  grid-column: span 4;
+}
+
+.about-page .widget-large,
+.about-page .table-card,
+.about-page .recommend-card {
+  grid-column: 1 / -1;
+}
+
+.about-page .watchlist-card,
+.about-page .routine-card {
+  grid-column: span 6;
+}
+
+/* Professional streaming table */
+.about-page .table-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(245,251,255,0.95));
+  border: 1px solid rgba(35, 73, 118, 0.16);
+}
+
+.about-page .platform-table {
+  min-width: 700px;
+  border: 1px solid rgba(30,63,102,0.16);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about-page .platform-table thead th {
+  background: linear-gradient(135deg, #1e3f66, #2f5e8f);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}
+
+.about-page .platform-table tbody tr:nth-child(odd) td {
+  background: rgba(238, 247, 255, 0.92);
+}
+
+.about-page .platform-table tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.about-page .platform-table tbody tr:hover td {
+  background: rgba(204, 226, 246, 0.65);
+}
+
+.about-page .platform-table td {
+  vertical-align: middle;
+}
+
+.about-page .platform-table img {
+  width: 86px;
+  max-height: 28px;
+  object-fit: contain;
+}
+
+.about-page .visit-btn {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: #1e3f66;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about-page .visit-btn:hover {
+  background: #285282;
+}
+
+/* General page design consistency */
+.reviews-page .page-header,
+.about-page .page-header,
+.game-page .hero {
+  border-radius: 24px;
+}
+
+.reviews-page .poster-grid,
+.about-page .dashboard,
+.home-page .card-grid {
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card),
+  .about-page .watchlist-card,
+  .about-page .routine-card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-page .dashboard > .widget:not(.widget-large):not(.table-card):not(.recommend-card),
+  .about-page .watchlist-card,
+  .about-page .routine-card {
+    grid-column: 1 / -1;
+  }
+}
